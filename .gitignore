@@ -1,0 +1,6 @@
+apps/
+old/
+venv/
+node_modules/
+media/
+static/

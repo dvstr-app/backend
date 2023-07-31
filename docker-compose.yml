@@ -37,7 +37,7 @@ services:
       - backend
       - certbot
   certbot:
-    image: certbot/certbot
+    image: certbot/dns-digitalocean
     # entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
     volumes:
       - ./digitalocean.ini/:/home/digitalocean.ini
